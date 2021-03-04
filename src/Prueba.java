@@ -101,8 +101,59 @@ class Ventana extends JFrame{
 		
 		JPanel panelIzq = new JPanel();
 		panelIzq.setBackground(new Color(162, 217, 206));
-		panelIzq.setPreferredSize(new Dimension(50, 50));
-		llenado(GridBagConstraints.WEST,8,13, 3,2, panelIzq);
+		panelIzq.setPreferredSize(new Dimension(170, 250));
+		llenado(GridBagConstraints.WEST,9,13, 3,5, panelIzq);
+		
+		panelIzq.add(new JLabel("Lotad led"));
+		panelIzq.add(new JTextField(5));
+		
+		panelIzq.add(new JLabel("Lest amt"));
+		panelIzq.add(new JTextField(5));
+		
+		panelIzq.add(new JLabel("Conssecion"));
+		panelIzq.add(new JTextField(5));
+		
+		panelIzq.add(new JLabel("Home colector"));
+		panelIzq.add(new JTextField(5));
+		
+		panelIzq.add(new JLabel("Lax AMT"));
+		panelIzq.add(new JTextField(5));
+		
+		panelIzq.add(new JLabel("Net AMT"));
+		panelIzq.add(new JTextField(5));
+		
+		panelIzq.add(new JLabel("Balance"));
+		panelIzq.add(new JTextField(5));
+		//-----------------------------------------------------------------------------------------
+		
+		JLabel lblHOME = new JLabel("Home Collection");
+    	JLabel lblPAID = new JLabel("Paid");
+    	JLabel lblPAY = new JLabel("Pay Type");
+    	JLabel lblREC = new JLabel("Receipt No.");
+    	
+    	JTextField txt = new JTextField(5);
+    	JTextField txt1= new JTextField(5);
+    	JTextField txt2= new JTextField(5);
+    	JTextField txt3= new JTextField(5);
+    	
+    	llenado(GridBagConstraints.WEST, 0, 25, 1, 2, lblHOME);
+    	llenado(GridBagConstraints.WEST, 1, 25, 1, 2, txt);
+    	
+    	llenado(GridBagConstraints.WEST, 2, 25, 1, 2, lblPAID);
+    	llenado(GridBagConstraints.WEST, 3, 25, 1, 2, txt1);
+    	
+    	llenado(GridBagConstraints.WEST, 4, 25, 1, 2, lblPAY);
+    	llenado(GridBagConstraints.WEST, 5, 25, 1, 2, txt2);
+    	
+    	llenado(GridBagConstraints.WEST, 6, 25, 1, 2, lblREC);
+    	llenado(GridBagConstraints.WEST, 7, 25, 1, 2, txt3);
+    	//----------------------------------------------------------------------------------------------------
+    	JPanel panelInferior = new JPanel();
+    	panelInferior.setBackground(Color.blue);
+    	panelInferior.setPreferredSize(new Dimension(500,50));
+		llenado(GridBagConstraints.HORIZONTAL,0,26,2,10,panelInferior);
+    	
+    	
 		pack();
 	}
 	public void agregarJbar(JMenuBar men,JMenu a) {
